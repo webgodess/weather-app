@@ -1,0 +1,136 @@
+/* Set up some basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(243, 255, 246);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(243, 255, 246, 1) 44%,
+    rgba(211, 227, 214, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(243, 255, 246, 1) 44%,
+    rgba(211, 227, 214, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(243, 255, 246, 1) 44%,
+    rgba(211, 227, 214, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3fff6",endColorstr="#d3e3d6",GradientType=1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: #d3e3d6;
+  box-shadow: 20px 20px 60px #b3c1b6, -20px -20px 60px #f3fff6;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.img-container {
+  display: inline-block;
+}
+
+.img-container img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.tempDisplay {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff5733;
+}
+
+.unit {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.bottomContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.column {
+  flex-basis: 30%;
+}
+
+.column p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.column i {
+  font-size: 2rem;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.column .unit {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.convert {
+  background-color: #ff5733;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.convert:hover {
+  background-color: #3e8e41;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .tempDisplay {
+    font-size: 2rem;
+  }
+
+  .column {
+    flex-basis: 40%;
+  }
+
+  .column i {
+    font-size: 1.5rem;
+  }
+
+  .fa {
+    margin-right: 2px;
+  }
+}

@@ -113,6 +113,18 @@ img:hover {
   background-color: #3e8e41;
 }
 
+.fa-tint {
+  color: dodgerblue;
+}
+
+.fa-wind {
+  color: darkturquoise;
+}
+
+.fa-thermometer-half {
+  color: red;
+}
+
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 1.5rem;

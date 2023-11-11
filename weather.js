@@ -110,6 +110,7 @@ class App extends React.Component {
     } else {
       element.innerHTML = this.state.temp + "℃";
       element1.innerHTML = this.state.feels + "℃";
+      element2.innerHTML = this.state.wind + " km/h";
     }
   }
   render() {

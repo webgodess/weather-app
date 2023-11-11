@@ -34,7 +34,7 @@ class App extends React.Component {
 
         fetch(
           /* request the weather based on the user's location from openweather API*/
-          `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=255f08bd15b5ea1db233a1a0641858b1&units=metric`
         )
           .then((response) => response.json())
           .then((data) => {
@@ -61,7 +61,7 @@ class App extends React.Component {
         const defLon = 2.3522;
 
         fetch(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${defLat}&lon=${defLon}&appid=${API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${defLat}&lon=${defLon}&appid=255f08bd15b5ea1db233a1a0641858b1&units=metric`
         )
           .then((response) => response.json())
           .then((data) => {
@@ -131,7 +131,7 @@ class App extends React.Component {
             <p>wind</p>
             <div>
               <i className="fas fa-wind"></i>
-              <span className="unit feelDisplay">{this.state.wind} m/s</span>
+              <span className="unit feelDisplay">{this.state.wind} km/h</span>
             </div>
           </div>
           <div className="column">

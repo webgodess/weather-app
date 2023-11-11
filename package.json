@@ -1,0 +1,20 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "This is a simple weather application built using React. It allows users to get the current weather conditions for their location or a default location (Paris) if geolocation is not available. The weather data is fetched from the OpenWeatherMap API, and weather icons are displayed based on the current weather condition.",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.22.15",
+    "babel-core": "^6.26.3"
+  }
+}

@@ -38,7 +38,7 @@ class App extends React.Component {
         )
           .then((response) => response.json())
           .then((data) => {
-            console.log(data);
+            // console.log(data);
             const iconCode = data.weather[0].icon;
             this.setState({
               lat: latitude,
@@ -95,13 +95,18 @@ class App extends React.Component {
     let tempinF;
     let feelsinF;
     let feelsinC;
+    let windinMs;
     let element = document.getElementsByClassName("tempDisplay")[0];
     let element1 = document.getElementsByClassName("feelDisplay")[0];
+    let element2 = document.getElementsByClassName("windDisplay")[0];
+
     if (regex.test(element.innerHTML)) {
       tempinF = (this.state.temp * 1.8 + 32).toFixed(2);
       feelsinF = (this.state.feels * 1.8 + 32).toFixed(2);
+      windinMs = (this.state.wind / 3.6).toFixed(2);
       element.innerHTML = tempinF + "℉";
       element1.innerHTML = feelsinF + "℉";
+      element2.innerHTML = windinMs + " m/s";
     } else {
       element.innerHTML = this.state.temp + "℃";
       element1.innerHTML = this.state.feels + "℃";
@@ -131,7 +136,7 @@ class App extends React.Component {
             <p>wind</p>
             <div>
               <i className="fas fa-wind"></i>
-              <span className="unit feelDisplay">{this.state.wind} km/h</span>
+              <span className="unit windDisplay">{this.state.wind} km/h</span>
             </div>
           </div>
           <div className="column">
